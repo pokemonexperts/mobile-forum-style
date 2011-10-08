@@ -4,7 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     color: #000;
-    background-color: #fff;
+    background-color: #f8f8f8;
     font-family: Verdana,Helvetica,Arial,sans-serif;
     font-size: 12px;
     line-height: 1.3em;
@@ -14,14 +14,14 @@ html { height: 100%; }
 body { position: relative; }
 
 a, a:visited {
-    color: #105289;
+    color: #000000; /* #376241 */
     text-decoration: underline;
 }
 a.link-new, a.link-new:visited {
-    color: #bc2a4d;
+    color: #382abc;
 }
 a:hover, a.link-new:hover {
-    color: #bc2a4d;
+    color: #382abc;
 }
 
 p { 
@@ -33,7 +33,7 @@ h2, h3 {
     font-size: 14px;
     margin: 4px 0;
     padding: 0;
-    color: #0077b2;
+    color: #3a7841;
     text-shadow: none;
 }
 
@@ -48,24 +48,24 @@ h2, h3 {
     text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
 }
 .gradient, .button1, .button2, th {
-    background: #12a2ea;
-    background: -webkit-gradient(linear, left top, left bottom, from(#0077b2), to(#12a2ea));
-    background: -moz-linear-gradient(top, #0077b2, #12a2ea);
+    background: #58a461;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3a7841), to(#58a461));
+    background: -moz-linear-gradient(top, #3a7841, #58a461);
     color: #fff !important;
     text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
 }
 .gradient.link:hover, .button1:hover, .button2:hover, #page-header > ul > li:hover {
-    background: #0077b2;
-    background: -webkit-gradient(linear, left top, left bottom, from(#0b5c84), to(#0077b2));
-    background: -moz-linear-gradient(top, #0b5c84, #0077b2);
+    background: #3a7841;
+    background: -webkit-gradient(linear, left top, left bottom, from(#325d37), to(#3a7841));
+    background: -moz-linear-gradient(top, #325d37, #3a7841);
 }
 .header.gradient, th, #page-header > ul > li {
-    background: -webkit-gradient(linear, left top, left bottom, from(#12a2ea), to(#0076b1));
-    background: -moz-linear-gradient(top, #12a2ea, #0076b1);
+    background: -webkit-gradient(linear, left top, left bottom, from(#58a461), to(#3a7741));
+    background: -moz-linear-gradient(top, #58a461, #3a7741);
 }
 .header.link.gradient:hover {
-    background: -webkit-gradient(linear, left top, left bottom, from(#0076b1), to(#12a2ea));
-    background: -moz-linear-gradient(top, #0076b1, #12a2ea);
+    background: -webkit-gradient(linear, left top, left bottom, from(#3a7741), to(#58a461));
+    background: -moz-linear-gradient(top, #3a7741, #58a461);
 }
 #page-header {
     z-index: 2;
@@ -135,7 +135,7 @@ h2, h3 {
     height: 30px;
 }
 .nav-block li.li-hover, .tabs-list:hover {
-    background-color: #0077b2;
+    background-color: #3a7841;
 }
 ul.sub { 
     display: none; 
@@ -144,9 +144,9 @@ ul.sub {
     top: 29px;
     left: 4px;
     right: 4px;
-    background-color: #12a2ea;
-    background: -webkit-gradient(linear, left top, left bottom, from(#12a2ea), to(#0d88c6));
-    background: -moz-linear-gradient(top, #12a2ea, #0d88c6);
+    background-color: #58a461;
+    background: -webkit-gradient(linear, left top, left bottom, from(#58a461), to(#498a51));
+    background: -moz-linear-gradient(top, #58a461, #498a51);
     padding: 2px;
     border: solid 2px #fff;
     border-radius: 6px;
@@ -181,7 +181,7 @@ ul.sub li span {
     padding: 4px 8px;
 }
 ul.sub li a:hover {
-    background-color: #0077b2;
+    background-color: #3a7841;
     color: #fff;
 }
 
@@ -262,12 +262,12 @@ p.copy-right { float: right; }
 }
 div.copyright, #information { text-align: center; }
 .rules, .notice {
-    background-color: #f9eaef;
-    border-color: #eeaabf;
+    background-color: #eaeaf9;
+    border-color: #acaaee;
     padding: 4px;
 }
 .rules h2 {
-    color: #dc1818;
+    color: #5918dc;
 }
 p.block { padding: 6px 4px; }
 
@@ -295,7 +295,7 @@ ul.forums, ul.forums > li {
     list-style-type: none;
 }
 ul.forums > li, .search .post-details {
-    border: solid 1px #cadceb;
+    border: solid 1px #d5e0d7;
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -308,7 +308,7 @@ ul.forums > li.locked {
 }
 ul.forums > li.row-new { 
     background-image: url("{T_THEME_PATH}/images/link_new.png"); 
-    border-color: #e9cad3;
+    border-color: #cbcae9;
     border-width: 2px;
 }
 ul.forums > li:last-child { margin-bottom: 0; }
@@ -328,12 +328,14 @@ ul.forums > li.locked a, ul.forums > li.locked a:visited {
     color: #888;
 }
 ul.forums > li.locked a:hover, ul.forums > li.row-new a, ul.forums > li.row-new a:visited {
-    color: #e02451;
+    color: #3624e0;
 }
-ul.forums > li.row-new a:hover { color: #bc2a4d; }
+ul.forums > li.row-new a:hover { color: #382abc; }
 ul.forums > li > p:first-child {
     font-size: 14px;
+    /*
     text-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px;
+    */
 }
 ul.forums strong { color: #888; font-weight: normal; }
 
@@ -345,7 +347,7 @@ span.replies {
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     color: #fff;
-    background-color: #12a2ea;
+    background-color: #58a461;
 }
 span.replies.empty { background-color: #ccc; }
 
@@ -444,13 +446,13 @@ ul.forums .pages a, ul.forums a.newest {
     display: inline-block;
     padding: 4px;
     border: solid 0px transparent;
-    background-color: #12a2ea;
+    background-color: #58a461;
     color: #fff !important;
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
 }
-ul.forums .pages a:hover { background-color: #0077b2; }
+ul.forums .pages a:hover { background-color: #3a7841; }
 ul.forums a.newest, ul.forums span.pages a { 
     line-height: 1em;
     font-size: 11px; 
@@ -540,7 +542,7 @@ fieldset.polls dd {
 }
 fieldset.polls dd div {
     color: #fff;
-    background-color: #a92346;
+    background-color: #2d23a9;
     border: solid 0px transparent;
     border-radius: 6px;
     -moz-border-radius: 6px;
