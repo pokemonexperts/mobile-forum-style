@@ -78,11 +78,17 @@
 	<!-- ENDIF -->
 
 		<li class="row<!-- IF topicrow.S_UNREAD_TOPIC --> row-new<!-- ENDIF --><!-- IF topicrow.S_TOPIC_LOCKED --> locked<!-- ENDIF --> link" onclick="document.location.href='<!-- IF topicrow.S_UNREAD_TOPIC and not S_IS_BOT -->{topicrow.U_NEWEST_POST}<!-- ELSE -->{topicrow.U_VIEW_TOPIC}<!-- ENDIF -->'; return false;">
-            <p><a href="{topicrow.U_VIEW_TOPIC}" class="topictitle">{topicrow.TOPIC_TITLE}</a>
+            <p>
+                <!-- IF topicrow.TOPIC_CLASS == 1 --><span style="font-weight: bold;">[!]</span><!-- ENDIF -->
+                <a href="{topicrow.U_VIEW_TOPIC}" class="topictitle">{topicrow.TOPIC_TITLE}</a>
                 <!-- IF topicrow.S_UNREAD_TOPIC and not S_IS_BOT --><a href="{topicrow.U_NEWEST_POST}" class="newest">{L_NEW_POST}</a><!-- ENDIF -->
                 <!-- IF topicrow.PAGINATION --><span class="pages">{topicrow.PAGINATION}</span><!-- ENDIF -->
             </p>
-            <p><span class="replies<!-- IF not topicrow.REPLIES --> empty<!-- ENDIF -->" title="{L_REPLIES}">{topicrow.REPLIES}</span> {topicrow.LAST_POST_TIME}</p>
+            <p>
+		<span style="display: inline-block; width: 3em;" class="replies<!-- IF not topicrow.REPLIES --> empty<!-- ENDIF -->" title="{L_REPLIES}">{topicrow.REPLIES}</span> 
+		<span style="display: inline-block; width: 45%;">{topicrow.LAST_POST_TIME}</span>
+		<span style="display: inline-block; width: 25%; text-align:right; <!-- IF topicrow.LAST_POST_AUTHOR_COLOUR -->color: {topicrow.LAST_POST_AUTHOR_COLOUR}<!-- ENDIF -->">{topicrow.LAST_POST_AUTHOR}</span>
+	     </p>
         </li>
         
 	<!-- IF topicrow.S_LAST_ROW -->
